@@ -1,6 +1,6 @@
 # MTL-ABSum
 
-**This code is for the paper: *A Cross-Task Attention Guided Method for Abstractive Text Summarization using Multi-Task Learning***
+**This code is for the paper: *A Cross-Task Attention Guided Method for Text Summarization using Multi-Task Learning***
 
 **Python Version**: This code is in Python3.6
 
@@ -46,13 +46,13 @@ In the future, we will upload our processed data.
 To train the POS task model, run:
 ```
 python -u posTask.py
-```  
+```
 
 ## step 2:  
 To train the Dependency Parsing task model, run:
 ```
 python -u dpTask.py
-```  
+```
 After the dp task training finished, we will infer the dependency arc in each sentence of AG and CNN/DailyMail datasets, run:
 ```
 python -u  runinfer.py 
@@ -62,13 +62,13 @@ python -u  runinfer.py
 To train the Text categorization task model, run:
 ```
 python -u classTask.py
-```  
+```
 
 ## step 4:  
 To train the Text Summarization model,you must first change the parameter in *[config.py](config.py)*: **is_coverage = False** , run:
 ```
 python -u train.py 
-```  
+```
 When the training finished, you can select one low loss model and put in *model/cnndm-coverage* folder, and change the parameter in *[config.py](config.py)*: **is_coverage = True** to continue training.  
 
 # Model Evaluation 
@@ -76,7 +76,7 @@ When the training finished, you can select one low loss model and put in *model/
 After the training finished, run
 ```
 python -u run.py
-```  
+```
 ## Notes:
  1. All model will be saved in the *model* folder
  2. All results will be save in the *results* folder
