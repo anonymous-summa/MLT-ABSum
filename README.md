@@ -1,6 +1,6 @@
 # MTL-ABSum
 
-**This code is for the paper: *A Cross-Task Attention Guided Method for Text Summarization using Multi-Task Learning***
+**This code is for the paper: *A Multi-Task Learning based Method for Text Summarization with Cross-Task Attention***
 
 **Python Version**: This code is in Python3.6
 
